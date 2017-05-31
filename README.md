@@ -1,3 +1,6 @@
+# phoenix-test
+My very first elixir/phoenix app
+
 # Discuss
 
 To start your Phoenix app:
