@@ -6,10 +6,13 @@ defmodule Discuss.Topic do
     field :body,  :string
   end
 
+  @doc """
+  Builds a changeset based on `struct` and `params`.
+  """
   def changeset(struct, params \\ %{}) do
     struct
-    |> cast(params, [:title])
-    |> validate_require([:title])
+    |> cast(params, [:title, :body])
+    |> validate_required([:title, :body])
   end
 end
 
