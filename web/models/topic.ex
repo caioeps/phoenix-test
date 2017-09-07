@@ -4,6 +4,7 @@ defmodule Discuss.Topic do
   schema "topics" do
     field :title, :string
     field :body,  :string
+    belongs_to :user, Discuss.User
   end
 
   @doc """
